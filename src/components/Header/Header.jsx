@@ -9,7 +9,7 @@ const Header = () => {
 
     return (
     <div className={s.header}>
-        <div className={s.header__burger} onClick={() =>{ setOpen(!open); console.log(open)}}>
+        <div className={s.header__burger} onClick={() =>setOpen(!open)}>
             <span></span>
         </div>
         <h1 className={s.header__title}>Вокально-инструментальный ансамбль Anacondaz</h1>

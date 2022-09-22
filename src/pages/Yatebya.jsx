@@ -7,6 +7,7 @@ const Yatebya = () => {
         <>
         
         <Header />
+        
         <p>ya tebya nikogda</p>
         </>
     );
