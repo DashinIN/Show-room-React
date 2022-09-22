@@ -1,0 +1,182 @@
+@import "../../App.scss";
+
+
+.header {
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.header__title {
+    color: white;
+    padding: 2em 3em;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+
+.header__burger {
+    z-index: 5;
+    display: block;
+    width:20px;
+    height:15px;
+    position: absolute;
+    cursor: pointer;
+    top: 40px;
+    left: 20px;
+
+
+    &:before, &:after, span {
+        left: 0;
+
+        position: absolute;
+        height: 15%;
+        width: 100%;
+        transition: all 0.3s ease-in;
+        background-color: white;
+    }
+    
+    span {
+
+        top: 50%;
+        transform: translate(0px, -50%);
+    }
+
+    &:before,  &:after {
+        content: " ";
+    }
+
+    &:before {
+        top: 0;
+    }
+    &:after {
+        bottom: 0;
+    }
+
+
+    &._active {
+    
+        span {
+            transform: scale(0);
+        }
+        &:before {
+            top: 50%;
+            transform: rotate(-45deg) ;
+            background-color: white;
+        }
+        &:after {
+            bottom: 40%;
+            transform: rotate(45deg);
+            background-color: white;
+        }
+    }
+}
+
+
+.header__nav {
+    padding-top: 100px;
+
+    z-index: 4;
+    font-size: 1em;
+    position: fixed;
+    top:0;
+    left: 0;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+   
+   text-align: center;
+   text-transform: uppercase;
+   background-color: $background__color;
+   
+
+   transition: all 0.3s ease 0s;
+   transform: translate(0px, -100%);
+
+}
+.header__nav._active {
+    transform: translate(0px, 0px);
+    background-color: rgba(0, 0, 0, 0.856);
+    height: 100%;
+   
+}
+
+.nav__item a {
+    padding: 2em;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease-in;
+    color: $text__color;
+}
+
+
+.nav__item  a:hover, .nav__item a:focus{
+    color: $background__color;
+    background-color: $text__color;
+}
+
+
+
+@media (min-width: 1000px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+    }
+    .header__burger {
+        display: none;
+    }
+    .header__title {
+        padding: 3rem 0; 
+        font-size: 2em;
+        text-align: center;
+        
+    }
+
+    .header__nav {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        overflow: hidden;
+       transform: translate(0, 0);
+        z-index: 0;
+       position: static;
+        background-color: $background__color;
+        min-height: 65px;
+        
+        font-size: 1em;
+        padding: 0;
+
+        
+        width: 100%;
+        
+    }
+
+    .header__row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+       
+        
+       
+    }
+    .nav__item {
+    flex: 1 0 auto;
+    }
+    .nav__item a {
+        padding: 2.3em;
+
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .header__title {
+        padding: 2em 3em 2.5em;
+    }
+
+}
