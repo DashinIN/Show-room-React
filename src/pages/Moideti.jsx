@@ -1,15 +1,13 @@
 
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
-
 
 const Moideti = () => {
+
+    document.title ="Мои дети не будут скучать";
+
     return (
         <>
-        
-        <Header />
         <p>moideti</p>
-        <Footer />
+        
         </>
     );
 }

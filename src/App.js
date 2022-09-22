@@ -4,17 +4,21 @@ import  Yatebya  from './pages/Yatebya'
 import  Moideti  from './pages/Moideti'
 import  Perezvoni  from './pages/Perezvoni'
 import  Vihodi  from './pages/Vihodi'
-import { Routes, Route } from 'react-router-dom'
+import  Layout  from './components/Layout'
+import { Routes, Route, Navigate } from 'react-router-dom'
 
 function App() {
   return (
     <>  
     <Routes>
-      <Route path="/Yatebya" element={<Yatebya />} />
-      <Route path="/Moideti" element={<Moideti />} />
-      <Route path="/Perezvoni" element={<Perezvoni />} />
-      <Route path="/Vihodi" element={<Vihodi/>} />
-      <Route path="*" element={ <h1>error</h1> } />
+      <Route path="/"  element={<Layout />} >
+        <Route path="/" element={<Navigate replace to="/Yatebya" />} />
+        <Route path="/Yatebya" element={<Yatebya />} />
+        <Route path="/Moideti" element={<Moideti />} />
+        <Route path="/Perezvoni" element={<Perezvoni />} />
+        <Route path="/Vihodi" element={<Vihodi/>} />
+        <Route path="*" element={<Navigate replace to="/Yatebya" />} />
+      </Route>
     </Routes>
     </>
   );

@@ -1,15 +1,14 @@
 
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
-
 
 const Perezvoni = () => {
+
+    document.title ="Перезвони мне";
     return (
         <>
         
-        <Header />
+      
         <p>perezvoni</p>
-        <Footer />
+      
         </>
     );
 }
