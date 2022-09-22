@@ -7,7 +7,7 @@
 }
 
 .header__title {
-    color: white;
+    color: $text__color;
     padding: 2em 3em;
     text-align: center;
     font-size: 1.2rem;
@@ -33,7 +33,7 @@
         height: 15%;
         width: 100%;
         transition: all 0.3s ease-in;
-        background-color: white;
+        background-color: $text__color;
     }
     
     span {
@@ -62,12 +62,12 @@
         &:before {
             top: 50%;
             transform: rotate(-45deg) ;
-            background-color: white;
+            background-color: $text__color;
         }
         &:after {
             bottom: 40%;
             transform: rotate(45deg);
-            background-color: white;
+            background-color: $text__color;
         }
     }
 }
@@ -100,6 +100,9 @@
     height: 100%;
    
 }
+.nav__item {
+    color: $text__color;
+}
 
 .nav__item a {
     padding: 2em;
@@ -108,7 +111,6 @@
     height: 100%;
     position: relative;
     transition: all 0.3s ease-in;
-    color: $text__color;
 }
 
 

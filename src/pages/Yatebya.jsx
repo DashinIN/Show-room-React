@@ -1,5 +1,6 @@
 
 import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
 
 
 const Yatebya = () => {
@@ -9,6 +10,7 @@ const Yatebya = () => {
         <Header />
         
         <p>ya tebya nikogda</p>
+        <Footer />
         </>
     );
 }

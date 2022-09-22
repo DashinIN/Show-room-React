@@ -1,5 +1,6 @@
 
 import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
 
 
 const Perezvoni = () => {
@@ -8,6 +9,7 @@ const Perezvoni = () => {
         
         <Header />
         <p>perezvoni</p>
+        <Footer />
         </>
     );
 }

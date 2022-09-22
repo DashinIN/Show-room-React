@@ -1,5 +1,6 @@
 
 import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
 
 
 const Vihodi = () => {
@@ -8,6 +9,7 @@ const Vihodi = () => {
         
         <Header />
         <p>Vihodi za menya</p>
+        <Footer />
         </>
     );
 }
