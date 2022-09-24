@@ -1,0 +1,113 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item{
+    height: 50vh;
+    background-color: rgb(86, 58, 148);
+    border: 5px solid rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.column1 {
+    >.item1 {
+    background-color: rgb(19, 108, 190);
+    }
+    >.item2 {
+        background-color: rgb(191, 1, 197);
+    }
+}
+
+.column2 {
+    >.item1 {
+    background-color: rgb(42, 17, 184);
+    }
+    >.item2 {
+    background-color: rgb(139, 137, 7);
+    }
+}
+
+
+@media (min-width:500px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        transition: all 0.4s ease;
+        &:hover, &:focus-within {
+            flex-basis: 40%;
+        }
+    }
+
+    .item {
+         transition: all 0.4s ease;
+    }
+
+    .column1, .column3{
+        flex-basis: 35%;
+    }
+
+    .column2 {
+        flex-basis: 30%;
+    }
+
+    .column1 {
+        >.item1 {
+            flex-basis: 60%;
+            &:hover, &:focus-within {
+                flex-basis: 84%;
+            }
+        }
+        >.item2 {
+            flex-basis: 40%;
+            &:hover, &:focus-within {
+                flex-basis: 56%;
+            }
+        }
+    }
+
+    .column2 {
+        >.item1 {
+            flex-basis: 40%;
+            &:hover, &:focus-within {
+                flex-basis: 60%;
+            }
+        }
+        >.item2 {
+            flex-basis: 60%;
+            &:hover, &:focus-within {
+                flex-basis: 70%;
+            }
+        }
+    }
+       
+    .column3 {
+        >.item1 {
+            flex-basis: 68%;
+            &:hover, &:focus-within {
+                flex-basis: 75%;
+            }
+        }
+        >.item2 {
+            flex-basis: 32%;
+            &:hover, &:focus-within {
+                flex-basis: 44.8%;
+            }
+        }
+    }
+         
+}

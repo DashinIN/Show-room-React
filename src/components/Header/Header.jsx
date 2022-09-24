@@ -15,10 +15,10 @@ const Header = () => {
         <h1 className={s.header__title}>Вокально-инструментальный ансамбль Anacondaz</h1>
         <nav className={`${s.header__nav} ${open ? s._active : ''}`}>
             <div className={s.header__row}>
-                <div className={s.nav__item}><NavLink to="/Yatebya" className={({ isActive }) => (isActive ? s.active : "")}>Yatebya</NavLink></div>
-                <div className={s.nav__item}><NavLink to="/Moideti" className={({ isActive }) => (isActive ? s.active : "")}>Moideti</NavLink></div>
-                <div className={s.nav__item}><NavLink to="/Perezvoni" className={({ isActive }) => (isActive ? s.active : "")}>Perezvoni</NavLink></div>
-                <div className={s.nav__item}><NavLink to="/Vihodi" className={({ isActive }) => (isActive ? s.active : "")}>Vihodi</NavLink></div>
+                <div className={s.nav__item}><NavLink to="/Yatebya" onClick={() =>setOpen(!open)} className={({ isActive }) => (isActive ? s.active : "")}>Yatebya</NavLink></div>
+                <div className={s.nav__item}><NavLink to="/Moideti" onClick={() =>setOpen(!open)} className={({ isActive }) => (isActive ? s.active : "")}>Moideti</NavLink></div>
+                <div className={s.nav__item}><NavLink to="/Perezvoni" onClick={() =>setOpen(!open)} className={({ isActive }) => (isActive ? s.active : "")}>Perezvoni</NavLink></div>
+                <div className={s.nav__item}><NavLink to="/Vihodi" onClick={() =>setOpen(!open)} className={({ isActive }) => (isActive ? s.active : "")}>Vihodi</NavLink></div>
             </div>
         </nav>
     </div>
