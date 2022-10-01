@@ -1,13 +1,31 @@
 {
   "files": {
-    "main.css": "/Show-room-React/static/css/main.b443d7bc.css",
-    "main.js": "/Show-room-React/static/js/main.4a0e3d7c.js",
+    "main.css": "/Show-room-React/static/css/main.3e0d82cd.css",
+    "main.js": "/Show-room-React/static/js/main.0d27b0ad.js",
+    "static/media/3p.mp3": "/Show-room-React/static/media/3p.efa9d9455a6f1353bfc9.mp3",
+    "static/media/4p.mp3": "/Show-room-React/static/media/4p.66889534c9d377183575.mp3",
+    "static/media/2p.mp3": "/Show-room-React/static/media/2p.687ec92cd30832c141e4.mp3",
+    "static/media/3m.mp3": "/Show-room-React/static/media/3m.ce7fd7dd70bfc778c25e.mp3",
+    "static/media/5p.mp3": "/Show-room-React/static/media/5p.0ef3523c79455519fca1.mp3",
+    "static/media/6p.mp3": "/Show-room-React/static/media/6p.47536922a7b0f2fc55e8.mp3",
+    "static/media/1p.mp3": "/Show-room-React/static/media/1p.a99cf73e1cf32512fb33.mp3",
+    "static/media/2m.mp3": "/Show-room-React/static/media/2m.f00d91a9d50c34d51b83.mp3",
+    "static/media/1m.mp3": "/Show-room-React/static/media/1m.fa4bfe5c7a3d60f605ab.mp3",
+    "static/media/5.webp": "/Show-room-React/static/media/5.db55f253f54e7eff73f0.webp",
+    "static/media/6.webp": "/Show-room-React/static/media/6.ca9467ce2b038742a258.webp",
+    "static/media/1.webp": "/Show-room-React/static/media/1.467e482f23fa809fc0af.webp",
+    "static/media/2m.webp": "/Show-room-React/static/media/2m.6af3976648cb3e8224ea.webp",
+    "static/media/1m.webp": "/Show-room-React/static/media/1m.d6dea783daa8f0fcff9e.webp",
+    "static/media/2.webp": "/Show-room-React/static/media/2.3d4aa813f3de4259bf07.webp",
+    "static/media/3.webp": "/Show-room-React/static/media/3.e9281989a138a9e54a64.webp",
+    "static/media/4.webp": "/Show-room-React/static/media/4.4ebec6b366cf94c24b46.webp",
+    "static/media/3m.webp": "/Show-room-React/static/media/3m.cb6c40d8732dbdeb8f2c.webp",
     "index.html": "/Show-room-React/index.html",
-    "main.b443d7bc.css.map": "/Show-room-React/static/css/main.b443d7bc.css.map",
-    "main.4a0e3d7c.js.map": "/Show-room-React/static/js/main.4a0e3d7c.js.map"
+    "main.3e0d82cd.css.map": "/Show-room-React/static/css/main.3e0d82cd.css.map",
+    "main.0d27b0ad.js.map": "/Show-room-React/static/js/main.0d27b0ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.b443d7bc.css",
-    "static/js/main.4a0e3d7c.js"
+    "static/css/main.3e0d82cd.css",
+    "static/js/main.0d27b0ad.js"
   ]
 }

@@ -8,7 +8,7 @@ const Vihodi = () => {
         
        
         <p>Vihodi za menya</p>
-       
+            
         </>
     );
 }
