@@ -1,14 +1,19 @@
-import { useState, useEffect } from "react";
+import React from "react";
 
-export default function useHover(ref, songFile) {
 
-    const [isHovering, setHovering] = useState(false);
+
+export default function useHover(ref, songFile, volume) {
+
+
+
+    const [isHovering, setHovering] = React.useState(false);
 
     const song = new Audio(songFile);
-    song.volume=0.5;
+    song.volume=volume;
 
     const turnOn = () => {
         setHovering(true);
+        if (volume>0) 
         song.play();
     }
 
@@ -17,7 +22,7 @@ export default function useHover(ref, songFile) {
         song.pause();
     }
 
-    useEffect( () => {
+    React.useEffect( () => {
         if(!ref.current){
             return;
         }
